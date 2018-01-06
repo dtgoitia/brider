@@ -1,0 +1,31 @@
+.grid {
+  display: block;
+  max-width: 300px;
+  background-color: rgb(216, 216, 216);
+}
+
+.grid #mark {
+  fill: rgb(120, 0, 0);
+}
+
+.grid #frame {
+  stroke: rgb(150, 150, 150);
+  stroke-width: 1;
+}
+
+.motion {
+  animation-name: motion;
+  animation-duration: 1600ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes motion {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(100,0)
+  }
+}
